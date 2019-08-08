@@ -1,2 +1,2 @@
 # miniapp-Lazada
-Lazada miniapp
+电商平台微信小程序
