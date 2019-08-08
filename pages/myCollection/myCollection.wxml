@@ -1,0 +1,34 @@
+<!--pages/myCollection/myCollection.wxml-->
+<!-- 我的收藏 -->
+<view class='tabs'>
+  <view class='{{tabclass[0]}}' data-id='0' bindtap='tabClick'>商品</view>
+  <view class='{{tabclass[1]}}' data-id='1' bindtap='tabClick'>帖子</view>
+</view>
+
+<view wx:if="{{id == 0}}">
+  <view class='goods'>
+    <view class='gimg'><image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg'></image></view>
+    <view class='gright'>
+      <view>猪肉猪肉猪肉猪肉猪肉猪肉猪肉</view>
+      <view class='grprice'>￥22/斤<text>￥32</text><image src='../../images/add.png'></image></view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{id == 1}}">
+  <view class='post' bindtap='informationContent'>
+    <view class='pleft'>
+      标题：味道不错味道不错味道不错<text>超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物</text>
+    </view>
+    <view class='pright'>
+      <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg'></image>
+    </view>
+    <view class='pbottom'>
+      <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg' id='pbimg'></image>
+      <text>昵称</text>
+      <image src='../../images/good.png'></image>5555
+      <image src='../../images/comment.png'></image>9999
+    </view>
+  </view>
+  
+</view>

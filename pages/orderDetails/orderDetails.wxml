@@ -1,0 +1,72 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<view class='top'>
+  <text>订单号：201202155115</text>
+  <view class='top-1'>
+    <view class='top-11'>
+      <image src='../../images/arounded.png'></image>下单
+    </view>
+    <view class='top-12'>--------</view>
+    <view class='top-11'>
+      <image src='../../images/around.png'></image>待配送
+    </view>
+    <view class='top-12'>--------</view>
+    <view class='top-11'>
+      <image src='../../images/around.png'></image>配送中
+    </view>
+    <view class='top-12'>--------</view>
+    <view class='top-11'>
+      <image src='../../images/around.png'></image>到达
+    </view>
+  </view>
+</view>
+
+<view class='info'>
+  <view class='info-1'>
+    <image src='../../images/Consignee.png'></image>
+    <text>收货人：岳飞</text>
+    13131331325
+  </view>
+  <view class='info-2'>
+    <image src='../../images/address.png'></image>
+    <text>广西</text>
+  </view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderbodyleft'><image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2316452727,1230385080&fm=27&gp=0.jpg' /></view>
+  <view class='orderbodyright'>
+    <text>农垦生鲜猪肉农垦生鲜猪肉猪肉猪肉猪</text>
+    <text>规格：500g</text>
+    <text>单价：￥28/斤　数量：1斤</text>
+  </view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderbodyleft1'>
+    <text>订单二维码</text>
+    <text id='orderbodyleft1'>使用说明：用于线下扫码核销</text>
+  </view>
+  <view class='orderbodyright1'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2316452727,1230385080&fm=27&gp=0.jpg' />
+  </view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderinfo' id='orderinfo'><text>应付款合计：</text><text id='orderinfoprice'>￥28.00</text></view>
+  <view class='orderinfo' id='orderinfo'><text>优惠：</text><text id='orderinfoprice2'>￥0.00</text></view>
+  <view class='orderinfo'><text>商品小计：</text><text id='orderinfoprice2'>￥28.00</text></view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderinfo'><text>送达时间</text><text id='orderinfodata'>2018-02-10　12：00</text></view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderinfo'><text>发票</text><text>电子发票</text></view>
+</view>
+
+<view class='orderbody'>
+  <view class='orderinfo'><text>下单时间</text><text>2018-01-02　18:02</text></view>
+</view>
+
+<view class='cancel'><text>取消订单</text></view>

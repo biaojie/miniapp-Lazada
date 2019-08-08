@@ -1,0 +1,166 @@
+/* pages/business/business.wxss */
+page{
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+  background-color: #f5f5f9;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.top{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #009CFF;
+}
+.top1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+.top1 image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.top1 text{
+  margin: auto;
+  margin-top: 15rpx;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  border-top: 2rpx solid #D8D8D8;
+  border-bottom: 2rpx solid #D8D8D8;
+  margin: 20rpx 0;
+  background-color: #FFF;
+}
+.nav1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 45rpx;
+}
+.nav1 text{
+  width: 100%;
+  text-align: center;
+}
+#nav{
+  border-right: 2rpx solid #D8D8D8;
+}
+.tab{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  border-top: 2rpx solid #D8D8D8;
+  background-color: #FFF;
+}
+.tab1{
+  flex: 1;
+  border-bottom: 2rpx solid #D8D8D8;
+  text-align: center;
+  padding: 25rpx 0;
+}
+.tab1ed{
+  flex: 1;
+  border-bottom: 6rpx solid #009CFF;
+  text-align: center;
+  padding: 25rpx 0;
+}
+.info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2rpx solid #D8D8D8;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+.info1{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+.info1 text{
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  padding: 3rpx 8rpx;
+  color: #353535;
+}
+.info2{
+  width: 100%;
+  display: flex;
+}
+.info2left{
+  width: 30%;
+}
+.info2left image{
+  width: 190rpx;
+  height: 170rpx;
+}
+.inforight{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  line-height: 45rpx;
+}
+.inforight1{
+  width: 100%;
+  display: flex;
+  color: #E51C23;
+}
+.inforight1 text{
+  flex: 1;
+  color: #000;
+  max-height: 90rpx;
+  overflow: hidden;
+}
+#type{
+  color: #009CFF;
+  padding: 5rpx 0;
+}
+#time{
+  font-size: 28rpx;
+}
+.bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  display: flex;
+  height: 90rpx;
+}
+.all{
+  flex: 2;
+  background-color: #009CFF;
+  box-sizing: border-box;
+  color: #FFF;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  padding-left: 25rpx;
+}
+.all text{
+  padding: 0 20rpx;
+}
+#confirm{
+  flex: 1;
+  color: #FFF;
+  height: 100%;
+  background-color: #FD8252;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.kg{
+  width: 100%;
+  height: 150rpx;
+}

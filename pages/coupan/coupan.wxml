@@ -1,0 +1,18 @@
+<!--pages/coupan/coupan.wxml-->
+<!-- 我的优惠卷 -->
+<view class='top'>
+  <view class='{{tabclass[0]}}' data-id='0' bindtap='tabClick'>未使用</view>
+  <view class='{{tabclass[1]}}' data-id='1' bindtap='tabClick'>已失效</view>
+</view>
+
+<view wx:if="{{id==0}}">
+  <view class='coupan'>
+    <view class='spare'></view><view class='day'>剩22天</view>
+    <view class='title'>新春大派送</view>
+    <view class='price'><text>仅线上可用</text>￥15</view>
+    <view class='data'>有效期：2018-01-01 12：00 ~ 2018-02-02 12：00</view>
+    <view class='info'>指定活动商品满150.00元减10.00元<text bindtap='discountGoods'>查看可用商品</text><image src='../../images/redright.png'></image></view>
+  </view>
+</view>
+
+<view wx:if="{{id==1}}"></view>

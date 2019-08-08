@@ -1,0 +1,23 @@
+<!--pages/staffManagement/staffManagement.wxml-->
+<!-- 农垦商家--店员管理 -->
+<view class='add' bindtap='addStaff'>
+  <text>添加店员</text>
+  <image src='../../images/right.png'></image>
+</view>
+
+<view class='staff' wx:for="{{carts}}" wx:key>
+  <view class='staff1'><text>{{item.name}}</text>{{item.phonenum}}</view>
+  <view class='staff1'>
+    <text>权限</text>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </checkbox-group>
+  </view>
+  <view class='staff2'>
+    <icon wx:if="{{item.selected}}" type="success" color="#009CFF" bindtap="selectList" data-index="{{index}}" />
+    <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}"/>
+    <text id='confirm'>确认使用</text><text id='other'>编辑</text><text id='other' bindtap='deleteList' data-index="{{index}}">删除</text>
+  </view>
+</view>

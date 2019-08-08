@@ -1,0 +1,262 @@
+/* pages/settleAccounts/settleAccounts.wxss */
+page{
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+  background-color: #f5f5f9;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.addadr{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  border-bottom: 2rpx solid #D8D8D8;
+  background-color: #FFF;
+}
+.addadr image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.addadr2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25rpx;
+  border-bottom: 2rpx solid #D8D8D8;
+  background-color: #FFF;
+}
+.addadr2 image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.addadr1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.addadr11{
+  display: flex;
+  align-items: center;
+}
+.addadr11 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.addadr11 text{
+  padding: 0 10rpx;
+  max-width: 80%;
+}
+#atext{
+  color: #888;
+}
+#ads{
+  padding-top: 20rpx;
+}
+.sa1{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #FFF;
+  border-top: 2rpx solid #D8D8D8;
+  border-bottom: 2rpx solid #D8D8D8;
+  margin-top: 20rpx;
+}
+.sa1 image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.sa11{
+  flex: 1;
+  padding-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+#sa11{
+  padding-top: 15rpx;
+  font-size: 30rpx;
+}
+.sa12{
+  display: flex;
+  align-items: center;
+}
+.sa12 image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.sa12 text{
+  border-radius: 8rpx;
+  padding: 3rpx 8rpx;
+  border: 2rpx solid #E51C23;
+  color: #E51C23;
+}
+.sa2{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+.sa21{
+  width: 30%;
+}
+.sa21 image{
+  width: 100%;
+  height: 150rpx;
+}
+.sa22{
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sa221{
+  width: 100%;
+  line-height: 45rpx;
+}
+.sa222{
+  align-self: flex-end;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#sared{
+  color: #E51C23;
+}
+.sa3{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+.sa3 text{
+  color: #E51C23;
+}
+.sa4{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+  border-top: 2rpx solid #D8D8D8;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.sa4 image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+#sa4{
+  flex: 1;
+}
+#sa5{
+  color: #E51C23;
+  display: flex;
+  width: 100%;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+.bottom text{
+  color: #FFF;
+  font-size: 36rpx;
+  padding: 25rpx;
+  background-color: #009CFF;
+  flex: 2;
+  box-sizing: border-box
+}
+#submit{
+  background-color: #FC8151;
+  color: #FFF;
+  font-size: 36rpx;
+  padding: 25rpx 0;
+  flex: 1;
+  text-align: center;
+}
+.distance{
+  width: 100%;
+  height: 150rpx;
+}
+#sa5 image{
+  float: right;
+}
+#sa5 picker{
+  width: 100%;
+}
+.bg{
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.mode{
+  width: 95%;
+  position: fixed;
+  background-color: #FFF;
+  top: 200rpx;
+  left: 2.5%;
+}
+.tabs{
+  width: 100%;
+  display: flex;
+}
+.tab{
+  flex: 1;
+  text-align: center;
+  border-bottom: 2rpx solid #D8D8D8;
+  padding: 25rpx 0;
+}
+.tabed{
+  flex: 1;
+  text-align: center;
+  border-bottom: 5rpx solid #009CFF;
+  padding: 25rpx 0;
+  
+}
+.modate{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #D8D8D8;
+
+}
+.modate picker{
+  width: 100%;
+}
+.mode button{
+  margin-top: 100rpx;
+  width: 100%;
+  background-color: #009CFF;
+  color: #FFF;
+  font-size: 36rpx;
+  border-radius: 0;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

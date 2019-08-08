@@ -1,0 +1,10 @@
+<!--pages/myFollow/myFollow.wxml-->
+<!-- 我的关注 -->
+<view class='list' bindtap='personalpage'>
+  <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg'></image>
+  <view class='list1'>
+    昵称
+    <text>最新发布标题：味道不错超级好吃最新发布标题：味道不错超级好吃...</text>
+  </view>
+  <image src='../../images/right.png' id='smallimg'></image>
+</view>

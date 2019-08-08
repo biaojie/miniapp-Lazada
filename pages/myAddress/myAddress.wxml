@@ -1,0 +1,30 @@
+<!--pages/myAddress/myAddress.wxml-->
+<!-- 我的地址 -->
+<view class='info'>
+  <view class='title'>常用地址1</view>
+  <view class='text'>
+    <view class='text1'>
+      岳飞<text>1222225582882</text>22
+    </view>
+    <view class='text2'>广西贵港市广西贵港市广西贵港市广西贵港市广西贵港市广西贵港市广西贵港市</view>
+    <view class='text3'></view>
+  </view>
+</view>
+
+<view class='addadr' bindtap='addadr'>
+  新增地址<image src='../../images/add2.png'></image>
+</view>
+
+<view class="hide {{showhide?'show':''}}">
+  <view class='bg' bindtap='addadr'></view>
+  <view class='newaddr'>
+  <form bindsubmit='saveadd' bindreset="formReset">
+    <view class='newaddr1'><text>收货地址</text><input type='text' placeholder='请输入地址' name='iaddr'/></view>
+    <view class='newaddr1'><text>门牌号</text><input type='text' placeholder='例如8号楼88室' name='iroomnum'/></view>
+    <view class='newaddr1'><text>联系人</text><input type='text' placeholder='请输入姓名' name='icontacts'/></view>
+    <view class='newaddr1'><text>手机号</text><input type='text' placeholder='请输入手机号码' name='iphonenum'/></view>
+  
+    <button bindtap='save' form-type='submit'>保存</button>
+  </form>
+  </view>
+</view>

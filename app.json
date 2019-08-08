@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/community/community",
+    "pages/shoppingCart/shoppingCart",
+    "pages/myOrder/myOrder",
+    "pages/orderDetails/orderDetails",
+    "pages/myIntegral/myIntegral",
+    "pages/coupan/coupan",
+    "pages/discountGoods/discountGoods",
+    "pages/myRelease/myRelease",
+    "pages/myAddress/myAddress",
+    "pages/business/business",
+    "pages/myBalance/myBalance",
+    "pages/Recharge/Recharge",
+    "pages/Withdrawals/Withdrawals",
+    "pages/myFollow/myFollow",
+    "pages/myCollection/myCollection",
+    "pages/orderRemind/orderRemind",
+    "pages/orderReserve/orderReserve",
+    "pages/personalpage/personalpage",
+    "pages/staffManagement/staffManagement",
+    "pages/addStaff/addStaff",
+    "pages/salesWater/salesWater",
+    "pages/orderD/orderD",
+    "pages/informationContent/informationContent",
+    "pages/sign/sign",
+    "pages/settleAccounts/settleAccounts",
+    "pages/communityClassification/communityClassification",
+    "pages/releaseInformation/releaseInformation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009CFF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

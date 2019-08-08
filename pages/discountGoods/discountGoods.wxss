@@ -1,0 +1,105 @@
+/* pages/discountGoods/discountGoods.wxss */
+page{
+  background-color: #F5F5F5;
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.listall{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.list{
+  flex: 1;
+  text-align: center;
+}
+.list text{
+  color: #888888;
+}
+.goods{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx 5rpx;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.good{
+  border-radius: 10rpx;
+  border: 2rpx solid #D8D8D8;
+  padding: 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  background-color: #FFF;
+  margin-bottom: 20rpx;
+}
+.good image{
+  width: 100%;
+  height: 200rpx;
+}
+.good text{
+  line-height: 45rpx;
+  padding: 5rpx 0;
+}
+#goodtext{
+  max-height: 90rpx;
+  overflow: hidden;
+}
+#special{
+  width: 25%;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #E51C23;
+  border-radius: 5rpx;
+  border: 2rpx solid #E51C23;
+  font-size: 28rpx;
+}
+#Original{
+  text-decoration: line-through;
+}
+.goodprice{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.goodprice text{
+  font-weight: 700;
+  color: #08CAAD;
+}
+.goodprice image{
+  width: 40rpx;
+  height: 40rpx;
+}
+#goodweight{
+  flex: 1;
+  color: #000;
+  font-weight: normal;
+}
+.chart{
+  width: 100%;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: center;
+  background-color: #009CFF;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+}
+.chart image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.chart text{
+  padding-left: 10rpx;
+}

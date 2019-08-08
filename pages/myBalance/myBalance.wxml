@@ -1,0 +1,23 @@
+<!--pages/myBalance/myBalance.wxml-->
+<!--我的余额  -->
+<view class='top'>
+  <view class='top1'><text>￥999</text>我的余额</view>
+  <view class='top2'>
+    <view class='top21' bindtap='Recharge'>
+      <image src='../../images/Recharge.png'></image>充值
+    </view>
+    <view class='top21' bindtap='Withdrawals'>
+      <image src='../../images/Withdrawals.png'></image>提现
+    </view>
+  </view>
+</view>
+
+<view class='title'>收支明细</view>
+<view class='datailed'>
+  <view class='datailed1'><text>充值收入</text>2018-01-02　15：30</view>
+  <view class='datailed2'>+90</view>
+</view>
+<view class='datailed'>
+  <view class='datailed1'><text>购买商品支出（订单号：2015-02-01220025）</text><text>2018-01-02　15：30</text></view>
+  <view class='datailed2'><text>-10</text></view>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/business/business.wxml-->
+<!--农垦商家  -->
+<view class='top'>
+  <view class='top1' bindtap='staffManagement'>
+    <image src='../../images/dygl.png'></image>
+    <text>店员管理</text>
+  </view>
+  <view class='top1' bindtap='salesWater'>
+    <image src='../../images/xsls.png'></image>
+    <text>销售流水</text>
+  </view>
+  <view class='top1'>
+    <image src='../../images/syt.png'></image>
+    <text>收银台</text>
+  </view>
+  <view class='top1'>
+    <image src='../../images/smhx.png'></image>
+    <text>扫码核销</text>
+  </view>
+</view>
+
+<view class='nav'>
+  <view class='nav1' id='nav' bindtap='orderRemind'>
+    <text>平台分配</text>
+    <text>订单提醒</text>
+  </view>
+  <view class='nav1' bindtap='orderReserve'>
+    <text>平台预定</text>
+    <text>订单抢单</text>
+  </view>
+</view>
+
+<view class='tab'>
+  <view class='{{tabclass[0]}}' bindtap='tabClick' data-id='0'>配送订单</view>
+  <view class='{{tabclass[1]}}' bindtap='tabClick' data-id='1'>预定订单</view>
+  <view class='{{tabclass[2]}}' bindtap='tabClick' data-id='2'>自提订单</view>
+</view>
+<view wx:if="{{id==0}}">
+<view class='info' wx:for="{{carts}}" wx:key>
+  <view class='info1'>
+    <icon wx:if="{{item.selected}}" type="success" color="#009CFF" bindtap="selectList" data-index="{{index}}" />
+    <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}"/>
+    <text bindtap='orderDetails'>查看订单</text>
+  </view>
+  <view class='info2'>
+    <view class='info2left'><image src='{{item.cimg}}'></image></view>
+    <view class='inforight'>
+      <view class='inforight1'><text>{{item.ctitle}}</text>+{{item.cprice}}</view>
+      <text id='type'>[{{item.ctype}}]</text>
+      <view class='inforight1'><text id='time'>{{item.ctime}}</text>{{item.cstate}}</view>
+    </view>
+  </view>
+</view>
+</view>
+
+<view class='kg'></view>
+<view class='bottom'>
+  <view class='all'>
+    <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" bindtap="selectAll"/>
+    <icon wx:else type="circle" color="#fff" bindtap="selectAll"/>
+    <text>全选</text>
+  </view>
+  <text id='confirm'>确认发货</text>
+</view>

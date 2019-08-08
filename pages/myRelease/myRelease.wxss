@@ -1,0 +1,97 @@
+/* pages/myRelease/myRelease.wxss */
+page{
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+  background-color: #f5f5f9;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.null{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.null image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+}
+.null text{
+  padding-top: 50rpx;
+  width: 100%;
+  text-align: center;
+  color: #C4C4C5;
+}
+#nulltext{
+  color: #08CAAD;
+}
+.release{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+  border-top: 2rpx solid #D8D8D8;
+  margin-bottom: 20rpx;
+}
+.top{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10rpx;
+}
+.top image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 180rpx;
+  border: 2rpx solid #D8D8D8;
+  margin-right: 20rpx;
+}
+.top text{
+  flex: 1;
+}
+#label{
+  color: #009C93;
+  border: 2rpx solid #009C93;
+  padding: 3rpx 5rpx;
+  border-radius: 10rpx;
+  
+}
+.rimage{
+  width: 100%;
+  height: 350rpx;
+}
+#title{
+  font-weight: 700;
+  padding: 10rpx 0;
+}
+#text{
+  color: #888;
+  font-size: 30rpx;
+  line-height: 45rpx;
+  max-height: 90rpx;
+  overflow: hidden;
+}
+.other{
+  width: 100%;
+  display: flex;
+  font-size: 30rpx;
+  color: #888;
+  padding: 10rpx 0;
+  align-items: center;
+}
+.other text{
+  flex: 1;
+}
+.other image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  margin-left: 20rpx;
+}

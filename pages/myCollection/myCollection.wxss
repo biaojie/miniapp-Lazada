@@ -1,0 +1,130 @@
+/* pages/myCollection/myCollection.wxss */
+page{
+  background-color: #f5f5f9;
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.tabs{
+  width: 100%;
+  display: flex;
+  background-color: #FFF;
+}
+.tab{
+  width: 50%;
+  text-align: center;
+  padding: 25rpx 0;
+  font-size: 36rpx;
+  border-bottom: 2rpx solid #D8D8D8;
+  font-weight: 700;
+}
+.tabed{
+  width: 50%;
+  text-align: center;
+  padding: 25rpx 0;
+  font-size: 36rpx;
+  border-bottom: 6rpx solid #009CFF;
+  font-weight: 700;
+}
+.goods{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+.gimg{
+  width: 30%;
+}
+.gimg image{
+  width: 190rpx;
+  height: 170rpx;
+}
+.gright{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grprice{
+  width: 100%;
+  display: flex;
+  font-size: 36rpx;
+  color: #FF3B4F;
+  align-items: center;
+  font-weight: bold;
+  align-self: flex-end;
+  
+}
+.grprice text{
+  padding: 0 20rpx;
+  color: #888888;
+  text-decoration: line-through;
+  font-size: 32rpx;
+  flex: 1;
+}
+.grprice image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.post{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+.pleft{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+  box-sizing: border-box;
+  padding-right: 10rpx;
+}
+.pleft text{
+  font-weight: bold;
+  padding-top: 20rpx;
+  color: #888;
+  font-size: 30rpx;
+  line-height: 45rpx;
+  overflow: hidden;
+  max-height:90rpx;
+
+}
+.pright{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pright image{
+  width: 100%;
+  height: 220rpx
+}
+.pbottom{
+  display: flex;
+  margin-top: 20rpx;
+  align-items: center;
+  width: 100%;
+}
+#pbimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 180rpx;
+  padding: 0;
+}
+.pbottom image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 30rpx;
+  padding-right: 15rpx;
+}
+.pbottom text{
+  padding: 0 15rpx;
+  flex: 1;
+}

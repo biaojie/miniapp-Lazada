@@ -1,0 +1,25 @@
+<!--pages/personalpage/personalpage.wxml-->
+<!-- 我的关注--个人主页  -->
+<view class='top'>
+  <image src=''></image>
+  <text>昵称</text>
+  <view class='top1'>
+    <view class='top11'>5685人关注</view><view class='top12'><text>已关注</text></view>
+  </view>
+</view>
+<view class='title'>全部发表</view>
+
+<view class='post' bindtap='informationContent'>
+  <view class='pleft'>
+    标题：味道不错味道不错味道不错<text>超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物</text>
+  </view>
+  <view class='pright'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg'></image>
+  </view>
+  <view class='pbottom'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg' id='pbimg'></image>
+    <text>昵称</text>
+    <image src='../../images/good.png'></image>5555
+    <image src='../../images/comment.png'></image>9999
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/Recharge/Recharge.wxml-->
+<!--我的余额--充值  -->
+<view class='balance'><text>账户余额</text><text>0元</text></view>
+<view class='recharge'>
+  <text>充值金额</text>
+  <view class='rec'>￥<input type='number' placeholder='请输入充值金额'></input></view>
+</view>
+
+<view class='Determine'><button>确定</button></view>

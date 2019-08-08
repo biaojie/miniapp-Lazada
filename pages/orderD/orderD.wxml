@@ -1,0 +1,6 @@
+<!--pages/orderD/orderD.wxml-->
+<!-- 农垦--销售流水--配送订单明细 -->
+<view class='list'>
+  <view class='list1'><text id='ddh'>订单号：20160326562326</text><text id='price'>￥28.00</text></view>
+  <view class='list2'><text id='what'>猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉</text><text id='data'>2018/01/13 18:01</text></view>
+</view>

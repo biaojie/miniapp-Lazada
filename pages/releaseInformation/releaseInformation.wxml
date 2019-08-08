@@ -1,0 +1,22 @@
+<!--pages/releaseInformation/releaseInformation.wxml-->
+<!-- 发现社区--发布资讯  -->
+<view class='info'>
+  <view class='title'><text>标题</text><input type='text' placeholder='说说你想要分享些什么'></input></view>
+  <view class='title2'><text>描述</text><textarea placeholder='描述一下你想分享的细节，或故事！'></textarea></view>
+
+  <view class='info2'>
+    <view class="hide{{tempFilePaths==''?'':'show'}}" wx:for='{{imgs}}' wx:key class='upload' >
+      <view class='upload_1' >
+        <view class='uploadpic' bindtap="previewImg" data-index="{{index}}"><image data-img="{{item}}" src='{{item}}'></image></view>
+        <view class='upload_2' bindtap='deleteImg' data-index="{{index}}"><image src='../../images/delete.png' style='width:40rpx;height:40rpx;'></image></view>
+      </view>
+    </view>
+    <view class="upload" bindtap='chooseImg'>
+      <view class='uploadpic'><view class='auto'><image src='../../images/add3.png' id='add3'></image><text id='uploadpic'>添加图片</text></view></view>
+    </view>
+  </view>
+
+</view>
+
+<view class='distance'></view>
+<button bindtap='communityClassification'>确认发布</button>

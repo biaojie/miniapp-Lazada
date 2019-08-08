@@ -1,0 +1,19 @@
+<!--pages/discountGoods/discountGoods.wxml-->
+<!--我的优惠卷-可用商品  -->
+<view class='listall'>
+  <view class='list'><picker bindchange="change" value="{{index}}" range="{{array}}">{{array[index]}}<text> ▼</text></picker></view>
+  <view class='list'><picker bindchange="change2" value="{{index2}}" range="{{array2}}">{{array2[index2]}}<text> ▼</text></picker></view>
+  <view class='list'><picker bindchange="change3" value="{{index3}}" range="{{array3}}">{{array3[index3]}}<text> ▼</text></picker></view>
+</view>
+
+<view class='goods'>
+  <view class='good'>
+    <image src='https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=71f6f27f2c7f9e2f6f351b082f31e962/500fd9f9d72a6059f550a1832334349b023bbae3.jpg'></image>
+    <text id='goodtext'>猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉</text>
+    <text id='special'>特价</text>
+    <text id='Original'>￥18</text>
+    <view class='goodprice'><text>￥12.00</text><text id='goodweight'>/500g</text><image src='../../images/add.png' bindtap='addGood'></image></view>
+  </view>
+</view>
+
+<view class='chart'><image src='../../images/ShoppingCart.png'></image><text>{{addnum}}</text></view>

@@ -1,0 +1,32 @@
+<!--pages/communityClassification/communityClassification.wxml-->
+<!--  发现社区--分类 -->
+<view class='top'>
+  <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg'></image>
+</view>
+
+<view class='post' bindtap='informationContent'>
+  <view class='pleft'>
+    标题：味道不错味道不错味道不错<text>超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物超市购物</text>
+  </view>
+  <view class='pright'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg'></image>
+  </view>
+  <view class='pbottom'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1447448605,3264651432&fm=27&gp=0.jpg' id='pbimg'></image>
+    <text>昵称</text>
+    <image src='../../images/good.png'></image>5555
+    <image src='../../images/comment.png'></image>9999
+  </view>
+</view>
+
+<view class='distance'></view>
+<button bindtap='Release'>发布资讯</button>
+
+<view class="hide{{send?'show':''}}">
+<view class='bg' bindtap='Release'></view>
+<view class='infoall'>
+  <view class='infoimg'><image src='../../images/close.png' bindtap='Release'></image></view>
+  <text bindtap='releaseInformation'>甜点制作</text><text bindtap='releaseInformation'>甜点制作</text><text bindtap='releaseInformation'>甜点制作</text><text>甜点制作</text>
+</view>
+</view>
+

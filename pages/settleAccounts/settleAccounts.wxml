@@ -1,0 +1,77 @@
+<!--pages/settleAccounts/settleAccounts.wxml-->
+<!-- 购物车--确定订单  -->
+<!-- 没有地址显示新增地址，有地址此处不显示  -->
+<!-- <view class='addadr' bindtap='myAddress'>
+  新增地址<image src='../../images/add2.png'></image>
+</view> -->
+<!-- 有地址显示默认地址，新增地址不显示  -->
+<view class='addadr2' bindtap='myAddress'>
+  <view class='addadr1'>
+    <view class='addadr11'><image src='../../images/Consignee.png'></image><text>收货人：岳飞</text>1234568453486</view>
+    <view class='addadr11' id='ads'><image src='../../images/address.png'></image><text id='atext'>广西广西广西广西广西广西广西广西广广西</text></view>
+  </view>
+  <image src='../../images/right.png'></image>
+</view>
+
+<view class='sa1' bindtap='mode'>
+  <image src='../../images/clock.png'></image>
+  <view class='sa11'><text>送达时间</text><text id='sa11'>2018.02.16 12：00</text></view>
+  <view class='sa12'><text>平台配送</text><image src='../../images/right.png'></image></view>
+</view>
+<view class='sa2'>
+  <view class='sa21'><image src='http://img1.imgtn.bdimg.com/it/u=817314671,64978970&fm=27&gp=0.jpg'></image></view>
+  <view class='sa22'>
+    <view class='sa221'>猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉</view>
+    <view class='sa222'><text id='sared'>￥14.50</text><text>x2</text></view>
+  </view>
+</view>
+<view class='sa2'>
+  <view class='sa21'><image src='http://img1.imgtn.bdimg.com/it/u=817314671,64978970&fm=27&gp=0.jpg'></image></view>
+  <view class='sa22'>
+    <view class='sa221'>猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉猪肉</view>
+    <view class='sa222'><text id='sared'>￥14.50</text><text>x2</text></view>
+  </view>
+</view>
+<view class='sa3'>合计：<text>￥56.00</text></view>
+<view class='sa4'><text id='sa4'>发票</text><text>电子发票</text><image src='../../images/right.png'></image></view>
+<view class='sa4'>
+  <view id='sa5'>
+     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      已优惠：{{array[index]}}<image src='../../images/right.png'></image>
+      </picker>
+  </view>
+  
+</view>
+
+<view class='distance'></view>
+<view class='bottom'><text>应付款：￥46.00</text><text id='submit'>提交订单</text></view>
+
+<view class="hide{{modeid?'show':''}}">
+<view class='bg' bindtap='mode'></view>
+<view class='mode'>
+  <view class='tabs'>
+    <view class='{{tabclass[0]}}' bindtap='tabClick' data-id='0'>平台配送</view>
+    <view class='{{tabclass[1]}}' bindtap='tabClick' data-id='1'>预约配送</view>
+    <view class='{{tabclass[2]}}' bindtap='tabClick' data-id='2'>自提</view>
+  </view>
+
+  <view wx:if="{{tab == 0}}">
+    <view class='modate'>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          配送日期: <text style='float:right'>{{date}}</text>
+      </picker>
+    </view>
+    <view class='modate'>
+      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          配送时间: <text style='float:right'>{{time}}</text>
+      </picker>
+    </view>
+    <button>保存</button>
+  </view>
+  <view wx:if="{{tab == 1}}">1</view>
+  <view wx:if="{{tab == 2}}">
+    <view class='modate'>自提地址：广址广西自提地址广西自提地址广西自提地址广西自提地址</view>
+    <button bindtap='mode'>保存</button>
+  </view>
+</view>
+</view>

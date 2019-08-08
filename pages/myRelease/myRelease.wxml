@@ -1,0 +1,23 @@
+<!--pages/myRelease/myRelease.wxml-->
+<!--我的发布  -->
+<view class='null' wx:if="{{release.length==0}}">
+  <image src='../../images/release2.png'></image>
+  <text>亲，还没有发布消息，去发布吗吧！</text>
+  <text id='nulltext'>去发布服务</text>
+</view>
+
+<view class='release' wx:for="{{release}}" wx:key>
+  <view class='top'>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg'></image>
+    <text>昵称</text>
+    <view id='label'>{{item.label}}</view>
+  </view>
+  <image   src='{{item.img}}' class='rimage'></image>
+  <text id='title'>标题：{{item.title}}</text>
+  <text id='text'>{{item.text}}</text>
+  <view class='other'>
+    <text>{{item.time}}</text>
+    <image src='../../images/good.png'></image>{{item.good}}
+    <image src='../../images/comment.png'></image>{{item.comment}}
+  </view>
+</view>

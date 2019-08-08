@@ -1,0 +1,35 @@
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<!-- 购物车 -->
+<view wx:for="{{scarts}}" wx:key>
+<view class='scart'>
+  <view class='stitle'><text>商品信息</text><image src='../../images/delete.png' bindtap="deleteList" data-index="{{index}}"></image></view>
+  <view class='sgoodimg'><image src='{{item.sgoodimg}}'></image></view>
+  <view class='scontent'>
+    <view class='sctitle'>{{item.sctitle}}</view>
+    
+    <view class='scall'>
+      <view class='scoldprice'>￥{{item.scoldprice}}</view>
+      <view class='scprice'>
+        <text>￥{{item.scprice}}/斤</text>
+        <view class='scprice1'><image src='../../images/minus.png' bindtap='minusCount' data-index="{{index}}"/><text>{{item.num}}</text><image src='../../images/plus.png' bindtap='addCount' data-index="{{index}}"/></view>
+      </view>
+    </view>
+
+  </view>
+  <view class='sbottom'>
+    <icon wx:if="{{item.selected}}" type="success" color="#009CFF" bindtap="selectList" data-index="{{index}}" />
+        <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}"/>
+    <text>小计：￥{{item.sbottom}}</text>
+  </view>
+</view>
+</view>
+
+<view class='bottom'>
+  <view class='bottom1'>
+    <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#009CFF" bindtap="selectAll"/>
+    <icon wx:else type="circle" bindtap="selectAll"/>
+    <text>全选</text>
+  </view>
+  <view class='bottom2'>合计：<text>￥{{totalPrice}}</text></view>
+  <view class='bottom3' bindtap='settleAccounts'>去结算</view>
+</view>

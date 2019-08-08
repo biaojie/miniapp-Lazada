@@ -1,0 +1,9 @@
+<!--pages/Withdrawals/Withdrawals.wxml-->
+<!-- 我的余额--提现 -->
+<view class='balance'><text>账户余额</text><text>0元</text></view>
+<view class='recharge'>
+  <text>提现金额</text>
+  <view class='rec'>￥<input type='number' placeholder='请输入提现金额'></input></view>
+</view>
+
+<view class='Determine'><button>提现</button></view>

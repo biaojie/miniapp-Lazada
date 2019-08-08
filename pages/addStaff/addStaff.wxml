@@ -1,0 +1,16 @@
+<!--pages/addStaff/addStaff.wxml-->
+<!-- 农垦商家--店员管理--添加店员 -->
+<view class='staff'>
+  <view class='staff1'><text>名字</text><input type='text' placeholder='请输入名字'></input></view>
+  <view class='staff1'><text>手机</text><input type='number' placeholder='请输入手机号码'></input></view>
+  <view class='staff1'>
+    <text>权限</text>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </checkbox-group>
+  </view>
+</view>
+
+<view class='confirm'><button bindtap='confirm'>确认</button></view>

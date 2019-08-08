@@ -1,0 +1,38 @@
+/* pages/myFollow/myFollow.wxss */
+page{
+  background-color: #f5f5f9;
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+}
+.list{
+  width: 100%;
+  display: flex;
+  padding: 25rpx;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 2rpx solid #D8D8D8;
+  align-items: center;
+}
+.list image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 180rpx;
+  border: 2rpx solid #D8D8D8;
+}
+.list1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 45rpx;
+  padding-left: 20rpx;
+}
+.list1 text{
+  font-size: 30rpx;
+  max-height: 40rpx;
+  overflow: hidden;
+}
+#smallimg{
+  width: 40rpx;
+  height: 40rpx;
+  border: none;
+}

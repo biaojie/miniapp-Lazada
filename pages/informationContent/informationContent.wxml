@@ -1,0 +1,44 @@
+<!--pages/informationContent/informationContent.wxml-->
+<!--  发现社区--资讯 -->
+<view class='info'>
+  <view class='info1'>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg' id='info1image'></image><text id='nickname'>昵称</text><text id='care'>关注+</text>
+  </view>
+  <text>　　今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天今天</text>
+  <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1436948145,4270509323&fm=200&gp=0.jpg'></image>
+  <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1436948145,4270509323&fm=200&gp=0.jpg'></image>
+</view>
+<view class='comment'>
+  <view class='comment1'><text>评论</text>共3条</view>
+  <view class='comment2'>
+    <view class='comment21'><image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg'/></view>
+    <view class='comment22'>
+      <view class='comment221'><text>昵称</text>1小时前</view>
+      <text>如果如果如果如果如果如果如果如果如果如果如果如果如果如果如果</text>
+    </view>
+  </view> 
+  <view class='comment2'>
+    <view class='comment21'><image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg'/></view>
+    <view class='comment22'>
+      <view class='comment221'><text>昵称</text>1小时前</view>
+      <text>如果如果如果如果如果如果如果如果如果如果如果如果如果如果如果</text>
+    </view>
+  </view>
+</view>
+
+
+<view class='bottom'>
+  <view class='bottom1'><image src='../../images/collection2.png'/></view>
+  <view class='bottom1'><image src='../../images/good2.png'/></view>
+  <view class='bottom1'><image src='../../images/write.png' bindtap='comment'/></view>
+  <view class='bottom1'><image src='../../images/comment2.png'/></view>
+</view>
+
+
+<view class="hide {{comment?'show':''}}">
+<view class='bg' bindtap='comment'></view>
+<view class='write'>
+  <textarea placeholder='说点什么吧~~~'></textarea>
+  <button bindtap='comment'>发送</button>
+</view>
+</view> 

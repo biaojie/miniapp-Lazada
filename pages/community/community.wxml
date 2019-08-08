@@ -1,0 +1,32 @@
+<!--pages/community/community.wxml-->
+<!--  发现社区  -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='true' class='swiper'>
+  <block wx:for="{{imgUrls}}" wx:key>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='navall'>
+  <view class='nav' bindtap='communityClassification'>
+    <image src=''></image>
+    <text>食谱分享</text>
+  </view>
+</view>
+
+<view class='release' wx:for="{{release}}" wx:key bindtap='informationContent'>
+  <view class='top'>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=12867320,655225767&fm=27&gp=0.jpg'></image>
+    <text>昵称</text>
+    <view id='label'>{{item.label}}</view>
+  </view>
+  <image   src='{{item.img}}' class='rimage'></image>
+  <text id='title'>标题：{{item.title}}</text>
+  <text id='text'>{{item.text}}</text>
+  <view class='other'>
+    <text>{{item.time}}</text>
+    <image src='../../images/good.png'></image>{{item.good}}
+    <image src='../../images/comment.png'></image>{{item.comment}}
+  </view>
+</view>

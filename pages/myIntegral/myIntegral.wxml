@@ -1,0 +1,27 @@
+<!--pages/myIntergral/myIntergral.wxml-->
+<!--我的积分  -->
+<view class='top'>
+  <view class='top-1'>
+    <view class='top-11'><text bindtap='sign'>去签到</text></view>
+    <view class='top-12'>
+      <view class='top-121'>
+        <image src=''></image>
+        <text>昵称</text>
+      </view>
+      <view class='top-121'>
+        <text id='top-121'>222</text>
+        <text>我的积分</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='title'>积分收支明细</view>
+<view class='datailed'>
+  <view class='datailed1'><text>签到收入</text>2018-01-02　15：30</view>
+  <view class='datailed2'>+10</view>
+</view>
+<view class='datailed'>
+  <view class='datailed1'><text>签到收入</text><text>2018-01-02　15：30</text></view>
+  <view class='datailed2'>+10</view>
+</view>
